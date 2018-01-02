@@ -9,9 +9,9 @@ const { mongoose } = require('./db/mongoose');
 const { Todo } = require('./models/todo');
 const { User } = require('./models/user');
 
-var { authenticate } = require('./middleware/authenticate');
+const { authenticate } = require('./middleware/authenticate');
 
-var app = express();
+let app = express();
 
 app.use(bodyParser.json());
 
